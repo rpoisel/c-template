@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": false,
+    "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
+    "python.pythonPath": "/home/rpoisel/miniconda3/envs/lc-rts/bin/python",
+    "python.formatting.provider": "autopep8",
+    "files.associations": {
+        "*.tcc": "cpp",
+        "optional": "cpp",
+        "cmath": "cpp",
+        "numeric": "cpp"
+    },
+}
