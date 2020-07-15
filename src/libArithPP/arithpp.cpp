@@ -26,7 +26,14 @@ double Calculator::divide()
   }
 
   double result = values.front();
-  std::for_each(std::next(values.begin(), 1), values.end(), [&result](auto const& value) { result /= value; });
+  for (auto it = std::next(values.begin(), 1); it != values.end(); it++)
+  {
+    if (*it == 0)
+    {
+      return std::numeric_limits<double>::infinity();
+    }
+    result /= *it;
+  }
   return result;
 }
 
