@@ -1,7 +1,7 @@
 {
     "editor.formatOnSave": false,
     "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
-    "python.pythonPath": "/home/rpoisel/miniconda3/envs/lc-rts/bin/python",
+    "python.pythonPath": "/home/rpoisel/miniconda3/envs/rpo-dev/bin/python",
     "python.formatting.provider": "autopep8",
     "files.associations": {
         "*.tcc": "cpp",
@@ -9,4 +9,9 @@
         "cmath": "cpp",
         "numeric": "cpp"
     },
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureArgs": [
+        "-DCMAKE_CXX_CPPCHECK=/usr/bin/cppcheck;--force;--inline-suppr;--std=c++11",
+        "-DCMAKE_C_CPPCHECK=/usr/bin/cppcheck;--force;--inline-suppr;--std=c99"
+    ]
 }
