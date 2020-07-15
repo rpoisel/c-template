@@ -11,7 +11,7 @@
     },
     "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.configureArgs": [
-        "-DCMAKE_CXX_CPPCHECK=/usr/bin/cppcheck;--force;--inline-suppr;--std=c++11",
-        "-DCMAKE_C_CPPCHECK=/usr/bin/cppcheck;--force;--inline-suppr;--std=c99"
+        "-DCMAKE_CXX_CPPCHECK=/usr/bin/cppcheck;--enable=all;--error-exitcode=0;--force;--inline-suppr;--std=c++11",
+        "-DCMAKE_C_CPPCHECK=/usr/bin/cppcheck;--enable=all;--error-exitcode=0;--force;--inline-suppr;--std=c99"
     ]
 }

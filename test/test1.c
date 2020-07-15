@@ -28,9 +28,7 @@ int main(void)
 {
   UnityBegin(__FILE__);
 
-  // cppcheck-suppress [preprocessorErrorDirective]
   RUN_TEST(testAddBad);
-  // cppcheck-suppress [preprocessorErrorDirective]
   RUN_TEST(testAddGood);
 
   return UnityEnd();
